@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public int playerNumber = 1;
     private Rigidbody2D body;
-    public float speed = 5f;
+    public float speed;
     public float jumpForce = 5f;
     public bool isJumping;
 
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Platform")
         {
