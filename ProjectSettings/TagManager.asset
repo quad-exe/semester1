@@ -4,17 +4,20 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Platform
+  - Spikes
+  - PlayerOne
+  - Interface
+  - RespawnPoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GroundLayer
   - Water
   - UI
-  - 
-  - 
-  - 
+  - players
+  - CircleSpawner
+  - SquareSpawner
   - 
   - 
   - 
