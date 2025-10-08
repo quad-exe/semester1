@@ -8,6 +8,10 @@ TagManager:
   - PlayerOne
   - Interface
   - RespawnPoint
+  - Player1
+  - Player2
+  - Box
+  - exit
   layers:
   - Default
   - TransparentFX
@@ -15,13 +19,13 @@ TagManager:
   - GroundLayer
   - Water
   - UI
-  - players
+  - player1
   - CircleSpawner
   - SquareSpawner
-  - 
-  - 
-  - 
-  - 
+  - spikes
+  - Buttons
+  - player2
+  - Door
   - 
   - 
   - 
