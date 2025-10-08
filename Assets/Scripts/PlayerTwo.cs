@@ -41,7 +41,7 @@ public class PlayerTwo : MonoBehaviour
                 return;
             }
 
-            // Reset position (keep original Z so player doesn’t vanish from camera)
+            // Reset position (keep original Z so player doesnï¿½t vanish from camera)
             transform.position = new Vector3(
                 RespawnPoint.position.x,
                 RespawnPoint.position.y,

@@ -84,7 +84,7 @@ public class MovingPlatform : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player2"))
         {
             // Parent the player to the platform
             collision.collider.transform.SetParent(transform);
@@ -93,7 +93,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player2"))
         {
             // Remove parent when leaving the platform
             collision.collider.transform.SetParent(null);

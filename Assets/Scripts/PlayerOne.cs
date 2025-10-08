@@ -1,5 +1,4 @@
-﻿using Unity.Hierarchy;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -11,15 +10,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ground Check")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.1f;
-    public LayerMask groundLayer;
+    public LayerMask groundLayer;   // real ground
+    public LayerMask playerLayer;   // for standing on Player 2
 
     [Header("Respawn")]
     public Transform RespawnPoint;
-    // No need to assign here � will find GameController automatically
-
 
     private Rigidbody2D rb;
-    private bool canJump = true;
     private bool isGrounded;
 
     void Start()
@@ -38,17 +35,13 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // --- Ground check ---
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
-        if (isGrounded)
-            canJump = true;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer | playerLayer);
 
         // --- Jump ---
-        if (Input.GetKeyDown(KeyCode.UpArrow) && canJump)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            canJump = false;
         }
     }
 
@@ -62,33 +55,27 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            // Reset position (keep original Z so player doesn’t vanish from camera)
             transform.position = new Vector3(
                 RespawnPoint.position.x,
                 RespawnPoint.position.y,
                 transform.position.z
             );
 
-            // Reset physics
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector2.zero;
-                rb.angularVelocity = 0f;
-            }
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
         }
     }
-        void OnDrawGizmosSelected()
-        {
 
-            if (groundCheck != null)
-            {
-                Gizmos.color = Color.red;
-                Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-            }
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
-       
+}
+
             
    
 
