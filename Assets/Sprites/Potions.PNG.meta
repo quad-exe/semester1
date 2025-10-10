@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: e93b9c4a2d7acc54fa65a91c95a288e4
+guid: 17d22810cd3f14114b5ad589f760e816
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4433991161036105763
-    second: IMG_0756 1_0
+      213: 8282033934473198383
+    second: IMG_0793_0
   - first:
-      213: 5910224408947427512
-    second: IMG_0756 1_1
+      213: 8276953933689840630
+    second: IMG_0793_1
   - first:
-      213: -5586250460739848740
-    second: IMG_0756 1_2
+      213: -782690431450958978
+    second: IMG_0793_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,71 +102,106 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0756 1_0
+      name: IMG_0793_0
       rect:
         serializedVersion: 2
-        x: 204
-        y: 185
-        width: 606
-        height: 675
+        x: 82
+        y: 347
+        width: 315
+        height: 509
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd79835088c4772c0800000000000000
-      internalID: -4433991161036105763
+      spriteID: f2b710abbf1bfe270800000000000000
+      internalID: 8282033934473198383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_0756 1_1
+      name: IMG_0793_1
       rect:
         serializedVersion: 2
-        x: 860
-        y: 807
-        width: 19
-        height: 53
+        x: 375
+        y: 77
+        width: 315
+        height: 507
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8b8872649c5550250800000000000000
-      internalID: 5910224408947427512
+      spriteID: 6f3eadfdfb5add270800000000000000
+      internalID: 8276953933689840630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_0756 1_2
+      name: IMG_0793_2
       rect:
         serializedVersion: 2
-        x: 843
-        y: 306
-        width: 36
-        height: 37
+        x: 645
+        y: 370
+        width: 315
+        height: 507
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd53d3d9dc6a972b0800000000000000
-      internalID: -5586250460739848740
+      spriteID: e73b44013335325f0800000000000000
+      internalID: -782690431450958978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0793_3
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 743
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a32b9dfbd3b42ae9eb688161526141
+      internalID: -1741137711
       vertices: []
       indices: 
       edges: []
@@ -175,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 450f8e9b8b60e456fa67437c12708919
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +220,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0756 1_0: -4433991161036105763
-      IMG_0756 1_1: 5910224408947427512
-      IMG_0756 1_2: -5586250460739848740
+      IMG_0793_3: -1741137711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

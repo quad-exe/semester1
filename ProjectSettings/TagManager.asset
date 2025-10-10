@@ -12,6 +12,7 @@ TagManager:
   - Player2
   - Box
   - exit
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Buttons
   - player2
   - Door
-  - 
+  - wall
   - 
   - 
   - 
