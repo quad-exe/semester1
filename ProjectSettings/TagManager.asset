@@ -13,6 +13,8 @@ TagManager:
   - Box
   - exit
   - Platform
+  - Circle
+  - Square
   layers:
   - Default
   - TransparentFX
