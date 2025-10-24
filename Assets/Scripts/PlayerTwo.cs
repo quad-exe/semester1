@@ -9,16 +9,16 @@ public class PlayerTwo : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
 
-   [Header("Yell Settings")]
-public KeyCode yellKey = KeyCode.W;
-public float yellRange = 5f;
-public float yellForce = 10f;
-public LayerMask breakableLayer;
-public AudioClip yellSound;
-private AudioSource audioSource;
-
-// Camera shake reference
-private CameraShake cameraShake;
+    [Header("Yell Settings")]
+    public KeyCode yellKey = KeyCode.W;
+    public float yellRange = 5f;
+    public float yellForce = 10f;
+    public LayerMask breakableLayer;
+    public AudioClip yellSound;
+    public float yellCooldown = 3f; // 🕒 seconds before next yell
+    private float nextYellTime = 0f; // internal timer
+    private AudioSource audioSource;
+    private CameraShake cameraShake;
 
     [Header("Respawn Settings")]
     public Transform respawnPoint;
@@ -28,7 +28,6 @@ private CameraShake cameraShake;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        audioSource = GetComponent<AudioSource>();
         audioSource = GetComponent<AudioSource>();
         cameraShake = Camera.main.GetComponent<CameraShake>();
     }
@@ -56,41 +55,48 @@ private CameraShake cameraShake;
         animator.SetBool("IsMoving", Mathf.Abs(moveInput) > 0.1f);
     }
 
-  void HandleYell()
-{
-    if (Input.GetKeyDown(yellKey))
+    void HandleYell()
     {
-        // Play sound if available
-        if (audioSource && yellSound)
-            audioSource.PlayOneShot(yellSound);
+        // prevent yell if still cooling down
+        if (Time.time < nextYellTime)
+            return;
 
-        // Camera shake
-        if (cameraShake != null)
-            StartCoroutine(cameraShake.Shake(0.3f, 0.2f)); // duration, intensity
-
-        // Detect all breakable objects in range
-        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, yellRange, breakableLayer);
-
-        foreach (var hit in hitObjects)
+        if (Input.GetKeyDown(yellKey))
         {
-            Rigidbody2D hitRb = hit.attachedRigidbody;
-            if (hitRb != null)
+            // set next time we can yell
+            nextYellTime = Time.time + yellCooldown;
+
+            // play sound
+            if (audioSource && yellSound)
+                audioSource.PlayOneShot(yellSound);
+
+            // camera shake
+            if (cameraShake != null)
+                StartCoroutine(cameraShake.Shake(0.3f, 0.2f));
+
+            // find breakable objects
+            Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, yellRange, breakableLayer);
+
+            foreach (var hit in hitObjects)
             {
-                Vector2 forceDir = (hitRb.transform.position - transform.position).normalized;
-                hitRb.AddForce(forceDir * yellForce, ForceMode2D.Impulse);
+                Rigidbody2D hitRb = hit.attachedRigidbody;
+                if (hitRb != null)
+                {
+                    Vector2 forceDir = (hitRb.transform.position - transform.position).normalized;
+                    hitRb.AddForce(forceDir * yellForce, ForceMode2D.Impulse);
+                }
+
+                Breakable breakable = hit.GetComponent<Breakable>();
+                if (breakable != null)
+                    breakable.Break();
             }
 
-            Breakable breakable = hit.GetComponent<Breakable>();
-            if (breakable != null)
-                breakable.Break();
+            Debug.Log("YELL used! Cooldown started for " + yellCooldown + "s");
         }
     }
-}
-
 
     private void OnDrawGizmosSelected()
     {
-        // visualize yell range in editor
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, yellRange);
     }
