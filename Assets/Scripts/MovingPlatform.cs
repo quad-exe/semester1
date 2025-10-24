@@ -2,14 +2,15 @@
 
 public class MovingPlatform : MonoBehaviour
 {
+    [Header("Movement Settings")]
     public Transform targetPosition;   // sideways destination
     public float downDistance = 3f;    // how far down it moves
     public float moveSpeed = 2f;
-    public float waitTime = 1f;        // pause time at bottom
+    public float waitTime = 1f;        // pause at bottom
 
     private Vector3 startPosition;
     private Vector3 downPosition;
-    private int step = 0; // which step of the path we're on
+    private int step = 0;              // current step in path
     private bool activated = false;
     private float waitTimer = 0f;
 
@@ -53,7 +54,13 @@ public class MovingPlatform : MonoBehaviour
                 break;
 
             case 4: // move target → start
-                MoveTowards(startPosition, -1); // -1 = stop after done
+                MoveTowards(startPosition, 5);
+                break;
+
+            case 5: // finished
+                activated = false;
+                step = 0;
+                downPosition = Vector3.zero;
                 break;
         }
     }
@@ -65,28 +72,23 @@ public class MovingPlatform : MonoBehaviour
         if (Vector3.Distance(transform.position, destination) < 0.01f)
         {
             step = nextStep;
-            if (step == -1) // finished route
-            {
-                activated = false;
-                step = 0;
-                downPosition = Vector3.zero; // reset
-            }
         }
     }
 
     public void Activate()
     {
-        if (!activated) // only trigger if not already running
+        if (!activated)
         {
             activated = true;
             step = 0;
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player2"))
         {
-            // Parent the player to the platform
+            // Parent player to platform
             collision.collider.transform.SetParent(transform);
         }
     }
@@ -95,9 +97,8 @@ public class MovingPlatform : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player2"))
         {
-            // Remove parent when leaving the platform
+            // Remove parent when leaving
             collision.collider.transform.SetParent(null);
         }
     }
-
 }

@@ -2,59 +2,114 @@ using UnityEngine;
 
 public class PlayerTwo : MonoBehaviour
 {
-    private Rigidbody2D Rb;
-    float Verti;
-    float Hori;
-    public float MoveSpeed;
-    public Transform RespawnPoint;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    [Header("Movement Settings")]
+    public float moveSpeed = 5f;
+
+   [Header("Yell Settings")]
+public KeyCode yellKey = KeyCode.W;
+public float yellRange = 5f;
+public float yellForce = 10f;
+public LayerMask breakableLayer;
+public AudioClip yellSound;
+private AudioSource audioSource;
+
+// Camera shake reference
+private CameraShake cameraShake;
+
+    [Header("Respawn Settings")]
+    public Transform respawnPoint;
+
     void Start()
     {
-        Rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
+        cameraShake = Camera.main.GetComponent<CameraShake>();
     }
-
-    // Update is called once per frame
-    public float moveSpeed = 5f;
 
     void Update()
     {
-        Vector3 move = Vector3.zero;
-
-        if (Input.GetKey(KeyCode.A))   // hold to move left
-        {
-            move += Vector3.left;
-        }
-        if (Input.GetKey(KeyCode.D))   // hold to move right
-        {
-            move += Vector3.right;
-        }
-
-        transform.position += move * moveSpeed * Time.deltaTime;
+        HandleMovement();
+        HandleYell();
     }
+
+    void HandleMovement()
+    {
+        float moveInput = 0f;
+
+        if (Input.GetKey(KeyCode.A))
+            moveInput = -1f;
+        else if (Input.GetKey(KeyCode.D))
+            moveInput = 1f;
+
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        if (moveInput != 0)
+            spriteRenderer.flipX = moveInput < 0;
+
+        animator.SetBool("IsMoving", Mathf.Abs(moveInput) > 0.1f);
+    }
+
+  void HandleYell()
+{
+    if (Input.GetKeyDown(yellKey))
+    {
+        // Play sound if available
+        if (audioSource && yellSound)
+            audioSource.PlayOneShot(yellSound);
+
+        // Camera shake
+        if (cameraShake != null)
+            StartCoroutine(cameraShake.Shake(0.3f, 0.2f)); // duration, intensity
+
+        // Detect all breakable objects in range
+        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, yellRange, breakableLayer);
+
+        foreach (var hit in hitObjects)
+        {
+            Rigidbody2D hitRb = hit.attachedRigidbody;
+            if (hitRb != null)
+            {
+                Vector2 forceDir = (hitRb.transform.position - transform.position).normalized;
+                hitRb.AddForce(forceDir * yellForce, ForceMode2D.Impulse);
+            }
+
+            Breakable breakable = hit.GetComponent<Breakable>();
+            if (breakable != null)
+                breakable.Break();
+        }
+    }
+}
+
+
+    private void OnDrawGizmosSelected()
+    {
+        // visualize yell range in editor
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, yellRange);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Spikes"))
+        if (collision.CompareTag("Spikes") || collision.CompareTag("LavaPit"))
         {
-            if (RespawnPoint == null)
+            if (respawnPoint == null)
             {
                 Debug.LogError("RespawnPoint not assigned!");
                 return;
             }
 
-            // Reset position (keep original Z so player doesn�t vanish from camera)
-            transform.position = new Vector3(
-                RespawnPoint.position.x,
-                RespawnPoint.position.y,
-                transform.position.z
-            );
+            transform.position = new Vector3(respawnPoint.position.x, respawnPoint.position.y, transform.position.z);
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
 
-            // Reset physics
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector2.zero;
-                rb.angularVelocity = 0f;
-            }
+            Debug.Log("Player respawned after hitting " + collision.tag);
         }
     }
 }
