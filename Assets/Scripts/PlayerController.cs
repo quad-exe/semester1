@@ -28,16 +28,16 @@ public class PlayerController : MonoBehaviour
 
         if (playerNumber == 1)
         {
-            if (Input.GetKey(KeyCode.A)) move = -1f;
-            if (Input.GetKey(KeyCode.D)) move = 1f;
+            if (Input.GetKey(KeyCode.LeftArrow)) move = -1f;
+            if (Input.GetKey(KeyCode.RightArrow)) move = 1f;
 
-            if (!isJumping && Input.GetKeyDown(KeyCode.W)) Jump();
+            if (!isJumping && Input.GetKeyDown(KeyCode.UpArrow)) Jump();
 
         }
         else if (playerNumber == 2)
         {
-            if (Input.GetKey(KeyCode.LeftArrow)) move = -1f;
-            if (Input.GetKey(KeyCode.RightArrow)) move = 1f;
+            if (Input.GetKey(KeyCode.A)) move = -1f;
+            if (Input.GetKey(KeyCode.D)) move = 1f;
 
             //if (Input.GetKeyDown(KeyCode.UpArrow)) Jump();
         }
