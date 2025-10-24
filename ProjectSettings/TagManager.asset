@@ -13,6 +13,8 @@ TagManager:
   - Box
   - exit
   - Platform
+  - LavaPit
+  - Breakable
   layers:
   - Default
   - TransparentFX
@@ -28,9 +30,9 @@ TagManager:
   - player2
   - Door
   - wall
-  - 
-  - 
-  - 
+  - LavaPit
+  - Breakable
+  - Preassure plate
   - 
   - 
   - 
