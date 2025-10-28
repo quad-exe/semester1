@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class CameraShake : MonoBehaviour
+public class CamShake : MonoBehaviour
 {
     public IEnumerator Shake(float duration, float magnitude)
     {

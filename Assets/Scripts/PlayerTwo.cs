@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerTwo : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;

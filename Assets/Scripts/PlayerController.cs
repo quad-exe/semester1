@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Playercontroller : MonoBehaviour
 {
     public int playerNumber = 1;
     private Rigidbody2D body;
