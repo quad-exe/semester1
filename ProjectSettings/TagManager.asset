@@ -17,6 +17,8 @@ TagManager:
   - Breakable
   - Circle
   - Square
+  - PlatformA
+  - PlatformB
   layers:
   - Default
   - TransparentFX
