@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
                 HandlePauseMenu();
                 break;
             case GameState.CompletedLevel:
-                HandleCompletedLevelMenu();
+                HandleCompletedLevel();
                 break;
             case GameState.GameOver:
                 HandleGameOver();
@@ -95,7 +95,7 @@ public enum GameState
 {
     MainMenu = 0,
     PauseMenu = 1,
-    EndLevelMenu = 2,
+    CompletedLevel = 2,
     GameOver = 3,
     GamePlaying = 4,
     CompletedGame = 5,
