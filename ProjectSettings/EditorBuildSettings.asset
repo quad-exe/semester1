@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/(Test) Lasse.unity
     guid: c2db9aeaf1278644bac1590577b37585
+  - enabled: 1
+    path: Assets/Scenes/Level designs/Level 3.unity
+    guid: b7e748057b5a045f686ddc6c065e2b6b
+  - enabled: 1
+    path: Assets/Scenes/Level designs/Level 4.unity
+    guid: 4c0ddc0e7a95a408e91b4926147bce4e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
