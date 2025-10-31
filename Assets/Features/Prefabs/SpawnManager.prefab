@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5352079187958127598
+--- !u!1 &8554865935549340191
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1046539283123453657}
-  - component: {fileID: 2275143021831788721}
+  - component: {fileID: 234680284200493301}
+  - component: {fileID: 3345804224394500615}
   m_Layer: 0
-  m_Name: ExitManager
+  m_Name: SpawnManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1046539283123453657
+--- !u!4 &234680284200493301
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5352079187958127598}
+  m_GameObject: {fileID: 8554865935549340191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1374676, y: -1.4912081, z: 0.02264833}
+  m_LocalPosition: {x: 1.7821966, y: -0.92734885, z: 0.021569438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2275143021831788721
+--- !u!114 &3345804224394500615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5352079187958127598}
+  m_GameObject: {fileID: 8554865935549340191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c1fb5706a493b048a061cfa976018e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 18ac7efec9664f340b103437fe87bd3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   circlePlayer: {fileID: 0}
   squarePlayer: {fileID: 0}
-  circleExit: {fileID: 3478111101077626395, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
-  squareExit: {fileID: 5664901613896713587, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
-  circleInside: 0
-  squareInside: 0
-  nextSceneName: Scene 4
+  circleSpawnPosition: {fileID: 3741861045831558047, guid: 93b7c62c33766b34bb1fac9c6979e406, type: 3}
+  squareSpawnPosition: {fileID: 8903297615460238493, guid: 49d743f112f1905469da5da8407f97ee, type: 3}
