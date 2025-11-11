@@ -29,7 +29,7 @@ public class TriggerButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player1"))
+        if (collision.CompareTag("Circle"))
         {
             playerInside = true;
             Debug.Log($"Player entered button zone. Press {activateKey} to activate {targetPlatformTag}.");
@@ -38,7 +38,7 @@ public class TriggerButton : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player1"))
+        if (collision.CompareTag("Circle"))
         {
             playerInside = false;
             Debug.Log("Player left the button zone.");

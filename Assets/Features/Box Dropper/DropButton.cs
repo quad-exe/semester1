@@ -21,7 +21,7 @@ public class BoxSpawnerButton : MonoBehaviour
 
     void Update()
     {
-        if (playerInside && Input.GetKeyDown(KeyCode.E) && !isAnimating)
+        if (playerInside && Input.GetKeyDown(KeyCode.RightShift) && !isAnimating)
         {
             StartCoroutine(PressButtonRoutine());
         }
@@ -78,13 +78,13 @@ public class BoxSpawnerButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player2"))
+        if (collision.CompareTag("Square"))
             playerInside = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player2"))
+        if (collision.CompareTag("Square"))
             playerInside = false;
     }
 }
