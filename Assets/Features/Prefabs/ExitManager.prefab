@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circlePlayer: {fileID: 0}
   squarePlayer: {fileID: 0}
-  circleExit: {fileID: 0}
-  squareExit: {fileID: 0}
+  circleExit: {fileID: 3478111101077626395, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
+  squareExit: {fileID: 5664901613896713587, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
   circleInside: 0
   squareInside: 0
-  nextSceneName: (Test) Lasse
+  nextSceneName: Scene 4

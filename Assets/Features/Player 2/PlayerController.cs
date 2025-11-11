@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -28,18 +29,18 @@ public class PlayerController : MonoBehaviour
 
         if (playerNumber == 1)
         {
-            if (Input.GetKey(KeyCode.A)) move = -1f;
-            if (Input.GetKey(KeyCode.D)) move = 1f;
+            if (Input.GetKey(KeyCode.LeftArrow)) move = -1f;
+            if (Input.GetKey(KeyCode.RightArrow)) move = 1f;
 
-            if (!isJumping && Input.GetKeyDown(KeyCode.W)) Jump();
+            if (!isJumping && Input.GetKeyDown(KeyCode.UpArrow)) Jump();
 
         }
         else if (playerNumber == 2)
         {
-            if (Input.GetKey(KeyCode.LeftArrow)) move = -1f;
-            if (Input.GetKey(KeyCode.RightArrow)) move = 1f;
+            if (Input.GetKey(KeyCode.A)) move = -1f;
+            if (Input.GetKey(KeyCode.D)) move = 1f;
 
-            //if (Input.GetKeyDown(KeyCode.UpArrow)) Jump();
+            //if (Input.GetKeyDown(KeyCode.W)) Jump();
         }
 
         body.linearVelocity = new Vector2(move * speed, body.linearVelocity.y);
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square")
+        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square" || collision.gameObject.tag == "Box")
         {
             isJumping = false;
         }
@@ -56,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square")
+        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square"|| collision.gameObject.tag == "Box")
         {
             isJumping = true;
         }
@@ -64,10 +65,9 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
         }
     }
-        
 }

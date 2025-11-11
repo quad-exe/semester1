@@ -102,10 +102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1372306a25e703a4a9934f6e7c0ceecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 0}
+  targetPosition: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
   downDistance: 7.5
   moveSpeed: 3
   waitTime: 1.5
+  rideableTags:
+  - PlatformA
+  - PlatformB
 --- !u!114 &388808509549739582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,10 +121,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1372306a25e703a4a9934f6e7c0ceecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {fileID: 0}
+  targetPosition: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
   downDistance: 3
   moveSpeed: 2
   waitTime: 1
+  rideableTags:
+  - PlatformA
+  - PlatformB
 --- !u!60 &5360287712442740250
 PolygonCollider2D:
   m_ObjectHideFlags: 0
