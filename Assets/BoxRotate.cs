@@ -5,14 +5,15 @@ public class BoxRotate2D : MonoBehaviour
 {
     private bool inAir = false;
     private bool hasRotated = false;
+    private bool hasRotatedOnce = false;
     public float rotationDuration = 0.2f; // hvor lang tid rotationen skal tage
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Platform"))
+        if (collision.gameObject.CompareTag("Platform") && !hasRotatedOnce)
         {
             inAir = true;
-            hasRotated = false; // tillad rotation én gang
+            hasRotated = false; 
             StartCoroutine(RotateSmoothlyAfterDelay(0.1f));
         }
     }
@@ -29,9 +30,9 @@ public class BoxRotate2D : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        if (inAir && !hasRotated)
+        if (inAir && !hasRotatedOnce)
         {
-            hasRotated = true;
+            hasRotatedOnce = true;
             float elapsed = 0f;
             float startRotation = transform.eulerAngles.z;
             float targetRotation = startRotation - 90f;
@@ -44,7 +45,6 @@ public class BoxRotate2D : MonoBehaviour
                 yield return null;
             }
 
-            // Sørg for rotationen er præcis til slut
             transform.rotation = Quaternion.Euler(0f, 0f, targetRotation);
         }
     }
