@@ -1951,8 +1951,8 @@ Transform:
   m_GameObject: {fileID: 807251735}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9999998, y: -1.9999999, z: -9.926107}
-  m_LocalScale: {x: 1.0032, y: 0.8589, z: 1}
+  m_LocalPosition: {x: -1.8, y: -0.37, z: -9.926107}
+  m_LocalScale: {x: 2.4, y: 0.8589, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3632,11 +3632,17 @@ PrefabInstance:
       propertyPath: RespawnPoint
       value: 
       objectReference: {fileID: 1291461128}
+    - target: {fileID: 8496688460030808304, guid: f597050f4fa46a84ba602050b65c8000, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 8940371666030799826, guid: f597050f4fa46a84ba602050b65c8000, type: 3}
       propertyPath: m_Name
       value: PlayerCircle 1
       objectReference: {fileID: 0}
     - target: {fileID: 8940371666030799826, guid: f597050f4fa46a84ba602050b65c8000, type: 3}
+      propertyPath: m_TagString
+      value: Player1
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

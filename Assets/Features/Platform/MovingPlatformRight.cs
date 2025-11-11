@@ -86,7 +86,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void MoveRidingPlayers(Vector3 delta)
     {
-        foreach (string playerTag in new string[] { "Player2", "Player1" })
+        foreach (string playerTag in new string[] { "Circle", "Square" })
         {
             GameObject[] players = GameObject.FindGameObjectsWithTag(playerTag);
             foreach (var p in players)
