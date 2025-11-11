@@ -101,7 +101,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1caf140e47c565b48aedd2c486543554, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -163,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4207762093123459660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,9 +176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c4a7c5bea073243b40c383c3204fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2
-  RespawnPoint: {fileID: 0}
   moveSpeed: 1
+  yellKey: 119
+  yellRange: 5
+  yellForce: 10
+  breakableLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  yellSound: {fileID: 0}
+  yellCooldown: 3
+  respawnPoint: {fileID: 0}
 --- !u!114 &5310371601779959081
 MonoBehaviour:
   m_ObjectHideFlags: 0

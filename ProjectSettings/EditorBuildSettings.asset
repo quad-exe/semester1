@@ -15,17 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/(Test) Lasse.unity
     guid: c2db9aeaf1278644bac1590577b37585
   - enabled: 1
-    path: Assets/Scenes/Level designs/Level 3.unity
-    guid: b7e748057b5a045f686ddc6c065e2b6b
-  - enabled: 1
     path: Assets/Scenes/Level designs/Level 4.unity
     guid: 4c0ddc0e7a95a408e91b4926147bce4e
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
-    guid: ba293b36db0b8f940ade679f2f03c3b6
-  - enabled: 1
-    path: Assets/Scenes/(Main menu) Stampe.unity
-    guid: 4d5b316e284bed74a8d6578b3c1c8d51
+    path: Assets/Scenes/Level designs/Tutorial.unity
+    guid: 8c4c2630fd2ce4a00bd7fc9cc66dfb9c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

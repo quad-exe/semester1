@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6783693034675469309}
   - component: {fileID: 5551527882138989170}
   - component: {fileID: 8496688460030808304}
+  - component: {fileID: 2040061586550006877}
   m_Layer: 0
   m_Name: PlayerCircle 1
   m_TagString: Player
@@ -188,7 +189,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1caf140e47c565b48aedd2c486543554, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -255,9 +256,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 10
+  ghostSpeed: 6
+  ghostDuration: 2
   groundCheck: {fileID: 7368118574111369624}
   groundCheckRadius: 0.05
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   RespawnPoint: {fileID: 0}
+  ghostObject: {fileID: 0}
+--- !u!95 &2040061586550006877
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8940371666030799826}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ab522836db474a3ab203c3750654c44, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
