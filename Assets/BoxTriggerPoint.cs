@@ -7,7 +7,7 @@ public class BoxTriggerPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Circle") || collision.CompareTag("Square"))
+        if (collision.CompareTag("Circle"))
         {
            
             Dead();
