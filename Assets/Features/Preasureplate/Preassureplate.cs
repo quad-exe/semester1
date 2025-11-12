@@ -51,7 +51,7 @@ public class PressurePlate : MonoBehaviour
 
     private bool IsValidObject(Collider2D col)
     {
-        return col.CompareTag("Player2") || col.CompareTag("Box");
+        return col.CompareTag("Player2") || col.CompareTag("Box") || col.CompareTag("Square");
     }
 }
 
