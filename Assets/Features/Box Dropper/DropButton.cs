@@ -15,6 +15,10 @@ public class BoxSpawnerButton : MonoBehaviour
     [Header("Box Limit")]
     public int maxBoxes = 4;
 
+    [Header("Box Physics")]
+    public float gravityScale = 1f;
+    public float dropSpeed = 1f;
+
     private bool playerInside = false;
     private bool isAnimating = false; // Prevent spamming
     private List<GameObject> spawnedBoxes = new List<GameObject>();
@@ -47,7 +51,9 @@ public class BoxSpawnerButton : MonoBehaviour
 
             Rigidbody2D rb = newBox.GetComponent<Rigidbody2D>();
             if (rb != null)
-                rb.gravityScale = 1f;
+            rb.gravityScale = gravityScale;
+            rb.linearVelocity = Vector2.down * dropSpeed;
+
 
             spawnedBoxes.Add(newBox);
 

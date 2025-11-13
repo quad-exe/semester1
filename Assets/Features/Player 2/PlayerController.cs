@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square" || collision.gameObject.tag == "Box")
+        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square" || collision.gameObject.tag == "Box" || collision.gameObject.tag == "Breakable")
         {
             isJumping = false;
         }
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square"|| collision.gameObject.tag == "Box")
+        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Square"|| collision.gameObject.tag == "Box" || collision.gameObject.tag == "Breakable")
         {
             isJumping = true;
         }
