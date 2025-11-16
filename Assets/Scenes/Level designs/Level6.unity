@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlatformTag: PlatformA
-  activateKey: 101
+  activateKey: 303
 --- !u!61 &170556743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -1.4887638}
+  m_Offset: {x: 0, y: -1.4171954}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -196,7 +196,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 3.977528}
+  m_Size: {x: 1, y: 5.6474714}
   m_EdgeRadius: 0
 --- !u!212 &170556744
 SpriteRenderer:
@@ -262,7 +262,7 @@ Transform:
   m_GameObject: {fileID: 170556741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1666, y: -0.5627, z: 10.84}
+  m_LocalPosition: {x: -0.1666, y: -0.5627, z: 11.07}
   m_LocalScale: {x: 0.4367693, y: 0.27325666, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -294,7 +294,7 @@ Transform:
   m_GameObject: {fileID: 202713263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15875626, y: -0.56397796, z: 10.72}
+  m_LocalPosition: {x: -0.15875626, y: -0.56397796, z: 10.89}
   m_LocalScale: {x: 0.61833286, y: 0.5023806, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1902,7 +1902,7 @@ Transform:
   m_GameObject: {fileID: 983740634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: 0.46}
+  m_LocalPosition: {x: 0, y: 0.21, z: 0.59}
   m_LocalScale: {x: 1, y: 1.57, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   boxPrefab: {fileID: 2552346687512714186, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
   spawnPoint: {fileID: 1586013803}
   buttonAnimator: {fileID: 0}
-  pressTrigger: Right Shift
+  pressTrigger: E
   maxBoxes: 4
 --- !u!61 &1330846639
 BoxCollider2D:

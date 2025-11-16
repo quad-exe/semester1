@@ -21,7 +21,7 @@ public class BoxSpawnerButton : MonoBehaviour
 
     void Update()
     {
-        if (playerInside && Input.GetKeyDown(KeyCode.RightShift) && !isAnimating)
+        if (playerInside && Input.GetKeyDown(KeyCode.E) && !isAnimating)
         {
             StartCoroutine(PressButtonRoutine());
         }
