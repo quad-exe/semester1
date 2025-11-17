@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 263617770}
   m_Layer: 3
   m_Name: SpotForBox
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 479362013}
   m_Layer: 3
   m_Name: PlatformWithChains1
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1346,7 +1346,7 @@ GameObject:
   - component: {fileID: 518936003}
   m_Layer: 3
   m_Name: LeftPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 555056721}
   m_Layer: 3
   m_Name: PlatformWithChains1
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2874,7 +2874,7 @@ GameObject:
   - component: {fileID: 949933897}
   m_Layer: 3
   m_Name: PlatformWithBox
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5085,7 +5085,7 @@ GameObject:
   - component: {fileID: 1639870299}
   m_Layer: 3
   m_Name: RightPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5226,7 +5226,7 @@ GameObject:
   - component: {fileID: 1660399857}
   m_Layer: 17
   m_Name: chain6
-  m_TagString: chain
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5898,8 +5898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0f66f7e18517b42afcb8c2c4c7fde1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 286312252}
-  player2: {fileID: 1659118088}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &1825654059
@@ -6049,7 +6049,7 @@ GameObject:
   - component: {fileID: 1893005868}
   m_Layer: 3
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6394,7 +6394,7 @@ GameObject:
   - component: {fileID: 2065929089}
   m_Layer: 3
   m_Name: PlatformExit
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6528,7 +6528,7 @@ GameObject:
   - component: {fileID: 2091434975}
   m_Layer: 3
   m_Name: PlatformWithSpikes
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
