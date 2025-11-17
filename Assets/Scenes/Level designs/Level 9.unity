@@ -5898,8 +5898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0f66f7e18517b42afcb8c2c4c7fde1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 286312252}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &1825654059
