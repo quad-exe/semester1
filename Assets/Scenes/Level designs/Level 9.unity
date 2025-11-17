@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 286312252}
-  player2: {fileID: 421061163}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &68408461
@@ -470,6 +470,76 @@ Transform:
   - {fileID: 1540708516}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &196575454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1210026978}
+    m_Modifications:
+    - target: {fileID: 1483108828303394219, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_Name
+      value: PlayerCircle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+--- !u!4 &196575455 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+  m_PrefabInstance: {fileID: 196575454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &233199650
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,11 +831,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &421061163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-  m_PrefabInstance: {fileID: 1800222624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &445207304
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 286312252}
-  player2: {fileID: 421061163}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &452823196
@@ -2088,7 +2153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 286312252}
-  player2: {fileID: 421061163}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &788704816
@@ -3279,11 +3344,6 @@ Transform:
   - {fileID: 479362012}
   m_Father: {fileID: 458826948}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1111131851 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-  m_PrefabInstance: {fileID: 1800222624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1118575959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,7 +3868,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1364542218}
-  - {fileID: 1111131851}
+  - {fileID: 196575455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1307568762
@@ -4646,7 +4706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 286312252}
-  player2: {fileID: 421061163}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &1467786662
@@ -4795,7 +4855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 286312252}
-  player2: {fileID: 421061163}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!61 &1540708519
@@ -4951,8 +5011,8 @@ Camera:
   m_GameObject: {fileID: 1607467213}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.2924527, g: 0.6721151, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5142,6 +5202,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1659118088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+  m_PrefabInstance: {fileID: 196575454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1660399855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5682,84 +5747,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1072226271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1800222624
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1210026978}
-    m_Modifications:
-    - target: {fileID: 1299374668422692781, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_Color.b
-      value: 0.91823894
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299374668422692781, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8137622
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299374668422692781, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_Color.r
-      value: 0.34361765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.053900294
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793367871613211612, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_Name
-      value: PlayerCircle
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-      propertyPath: m_TagString
-      value: Player2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1483108828303394219, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
 --- !u!1 &1808391232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,7 +5895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 286312252}
-  player2: {fileID: 421061163}
+  player2: {fileID: 1659118088}
   respawnPoint1: {fileID: 1894207615}
   respawnPoint2: {fileID: 758495110}
 --- !u!1 &1825654059
