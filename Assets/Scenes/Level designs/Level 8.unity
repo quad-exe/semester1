@@ -1757,6 +1757,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PlatformA
       objectReference: {fileID: 0}
+    - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
+      propertyPath: downDistance
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
+      propertyPath: targetPosition
+      value: 
+      objectReference: {fileID: 433447607}
     - target: {fileID: 5147406445930251366, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: downDistance
       value: 4.8
@@ -1817,8 +1825,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 388808509549739582, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

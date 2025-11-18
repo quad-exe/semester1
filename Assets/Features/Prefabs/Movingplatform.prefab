@@ -184,7 +184,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3955567531178204420}
   - component: {fileID: 7316627439004999010}
-  - component: {fileID: 7947890598320193171}
   - component: {fileID: 1776344429000406627}
   m_Layer: 3
   m_Name: Movingplatform
@@ -265,22 +264,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7947890598320193171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8027903136396824391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1372306a25e703a4a9934f6e7c0ceecf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {fileID: 0}
-  downDistance: 6.4
-  moveSpeed: 3
-  waitTime: 1.5
 --- !u!60 &1776344429000406627
 PolygonCollider2D:
   m_ObjectHideFlags: 0

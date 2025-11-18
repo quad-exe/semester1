@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6511943268201408576}
   - component: {fileID: 1388714298173140871}
-  - component: {fileID: 5147406445930251366}
-  - component: {fileID: 388808509549739582}
   - component: {fileID: 5360287712442740250}
+  - component: {fileID: 4185978209807949485}
   m_Layer: 3
   m_Name: Movingplatform
   m_TagString: Platform
@@ -90,44 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5147406445930251366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067887688680619907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1372306a25e703a4a9934f6e7c0ceecf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
-  downDistance: 7.5
-  moveSpeed: 3
-  waitTime: 1.5
-  rideableTags:
-  - PlatformA
-  - PlatformB
---- !u!114 &388808509549739582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067887688680619907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1372306a25e703a4a9934f6e7c0ceecf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
-  downDistance: 3
-  moveSpeed: 2
-  waitTime: 1
-  rideableTags:
-  - PlatformA
-  - PlatformB
 --- !u!60 &5360287712442740250
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -181,3 +142,22 @@ PolygonCollider2D:
       - {x: 0.50000656, y: -0.4965842}
       - {x: 0.48418775, y: 0.28009507}
   m_UseDelaunayMesh: 0
+--- !u!114 &4185978209807949485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067887688680619907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1372306a25e703a4a9934f6e7c0ceecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {fileID: 0}
+  downDistance: 3
+  moveSpeed: 2
+  waitTime: 1
+  rideableTags:
+  - PlatformA
+  - PlatformB
