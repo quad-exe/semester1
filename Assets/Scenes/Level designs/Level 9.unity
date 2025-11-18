@@ -121,6 +121,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &32781979
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +275,8 @@ Transform:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!1 &49484821
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +365,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -633,9 +640,12 @@ Transform:
   - {fileID: 1540708516}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 1707155200}
   - {fileID: 1026557248}
   - {fileID: 2034868335}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -1096,7 +1106,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -2504,7 +2518,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -3048,7 +3066,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -3370,6 +3392,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -3447,6 +3470,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
   m_PrefabInstance: {fileID: 1026557247}
   m_PrefabAsset: {fileID: 0}
+=======
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
@@ -3794,7 +3822,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -3982,7 +4014,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -4337,7 +4373,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -4540,7 +4580,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -4806,7 +4850,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -4972,7 +5020,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -5175,7 +5227,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -5728,6 +5784,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -5813,6 +5870,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3955567531178204420, guid: d70bbc0fa78a24026814ab64f2787f8e, type: 3}
   m_PrefabInstance: {fileID: 1707155199}
   m_PrefabAsset: {fileID: 0}
+=======
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
@@ -5987,7 +6049,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -6175,7 +6241,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -6287,7 +6357,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
@@ -6659,6 +6733,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &2034868334
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,6 +6822,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -6930,7 +7007,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_WasSpriteAssigned: 1
+=======
+  m_WasSpriteAssigned: 0
+>>>>>>> Stashed changes
 =======
   m_WasSpriteAssigned: 0
 >>>>>>> Stashed changes
